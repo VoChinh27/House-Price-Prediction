@@ -1,0 +1,524 @@
+MSSubClass: 'Xác định loại nhà liên quan đến giao dịch.'
+
+        20: '1-TẦNG 1946 & MỚI HƠN TẤT CẢ CÁC KIỂU'
+        30: '1-TẦNG 1945 & CŨ HƠN'
+        40: '1-TẦNG CÓ GÁC XÉP HOÀN THÀNH TẤT CẢ CÁC TUỔI'
+        45: '1-1/2 TẦNG - CHƯA HOÀN THÀNH TẤT CẢ CÁC TUỔI'
+        50: '1-1/2 TẦNG HOÀN THÀNH TẤT CẢ CÁC TUỔI'
+        60: '2-TẦNG 1946 & MỚI HƠN'
+        70: '2-TẦNG 1945 & CŨ HƠN'
+        75: '2-1/2 TẦNG TẤT CẢ CÁC TUỔI'
+        80: 'TẦNG CHIA HOẶC NHIỀU CẤP'
+        85: 'TẦNG CHIA FOYER'
+        90: 'NHÀ ĐÔI - TẤT CẢ CÁC KIỂU VÀ TUỔI'
+       120: '1-TẦNG PUD (Phát triển Đơn vị Kế hoạch) - 1946 & MỚI HƠN'
+       150: '1-1/2 TẦNG PUD - TẤT CẢ CÁC TUỔI'
+       160: '2-TẦNG PUD - 1946 & MỚI HƠN'
+       180: 'PUD - NHIỀU CẤP - BAO GỒM TẦNG CHIA/FOYER'
+       190: 'CHUYỂN ĐỔI 2 GIA ĐÌNH - TẤT CẢ CÁC KIỂU VÀ TUỔI'
+
+MSZoning: 'Xác định phân loại quy hoạch chung của giao dịch.'
+
+       A: 'Nông nghiệp'
+       C: 'Thương mại'
+       FV: 'Khu dân cư Làng Nổi'
+       I: 'Công nghiệp'
+       RH: 'Khu dân cư Mật độ Cao'
+       RL: 'Khu dân cư Mật độ Thấp'
+       RP: 'Khu dân cư Mật độ Thấp Công viên'
+       RM: 'Khu dân cư Mật độ Trung Bình'
+
+LotFrontage: 'Chiều dài tuyến đường kết nối với tài sản'
+
+LotArea: 'Kích thước lô đất tính bằng feet vuông'
+
+Street: 'Loại đường truy cập vào tài sản'
+
+       Grvl: 'Đường sỏi'
+       Pave: 'Đường nhựa'
+
+Alley: 'Loại đường hẻm truy cập vào tài sản'
+
+       Grvl: 'Đường sỏi'
+       Pave: 'Đường nhựa'
+       NA: 'Không có đường hẻm'
+
+LotShape: 'Hình dạng chung của tài sản'
+
+       Reg: 'Hình dạng đều'
+       IR1: 'Hơi không đều'
+       IR2: 'Không đều vừa phải'
+       IR3: 'Không đều'
+
+LandContour: 'Độ phẳng của tài sản'
+
+       Lvl: 'Gần phẳng'
+       Bnk: 'Dốc - Tăng nhanh và đáng kể từ độ cao đường đến tòa nhà'
+       HLS: 'Dốc đồi - Dốc đáng kể từ bên này sang bên kia'
+       Low: 'Chỗ trũng'
+
+Utilities: 'Loại tiện ích có sẵn'
+
+       AllPub: 'Tất cả tiện ích công cộng (Điện, Gas, Nước, & Thoát nước)'
+       NoSewr: 'Điện, Gas và Nước (Bể tự hoại)'
+       NoSeWa: 'Chỉ có Điện và Gas'
+       ELO: 'Chỉ có Điện'
+
+LotConfig: 'Cấu hình lô đất'
+
+       Inside: 'Lô đất bên trong'
+       Corner: 'Lô đất góc'
+       CulDSac: 'Ngõ cụt'
+       FR2: 'Mặt tiền trên 2 bên của tài sản'
+       FR3: 'Mặt tiền trên 3 bên của tài sản'
+
+LandSlope: 'Độ dốc của tài sản'
+
+       Gtl: 'Dốc nhẹ'
+       Mod: 'Dốc vừa phải'
+       Sev: 'Dốc nghiêm trọng'
+
+Neighborhood: 'Vị trí vật lý trong giới hạn thành phố Ames'
+
+ ```python
+       Blmngtn: 'Bloomington Heights'
+       Blueste: 'Bluestem'
+       BrDale: 'Briardale'
+       BrkSide: 'Brookside'
+       ClearCr: 'Clear Creek'
+       CollgCr: 'College Creek'
+       Crawfor: 'Crawford'
+       Edwards: 'Edwards'
+       Gilbert: 'Gilbert'
+       IDOTRR: 'Iowa DOT và Đường sắt'
+       MeadowV: 'Meadow Village'
+       Mitchel: 'Mitchell'
+       Names: 'North Ames'
+       NoRidge: 'Northridge'
+       NPkVill: 'Northpark Villa'
+       NridgHt: 'Northridge Heights'
+       NWAmes: 'Northwest Ames'
+       OldTown: 'Old Town'
+       SWISU: 'Nam & Tây của Đại học Bang Iowa'
+       Sawyer: 'Sawyer'
+       SawyerW: 'Sawyer West'
+       Somerst: 'Somerset'
+       StoneBr: 'Stone Brook'
+       Timber: 'Timberland'
+       Veenker: 'Veenker'
+
+Condition1: 'Sự gần gũi với các điều kiện khác'
+
+       Artery: 'Gần đường chính'
+       Feedr: 'Gần đường phụ'
+       Norm: 'Bình thường'
+       RRNn: 'Trong vòng 200' từ Đường sắt Bắc-Nam'
+       RRAn: 'Gần Đường sắt Bắc-Nam'
+       PosN: 'Gần tính năng tích cực bên ngoài - công viên, đường xanh, v.v.'
+       PosA: 'Gần tính năng tích cực bên ngoài'
+       RRNe: 'Trong vòng 200' từ Đường sắt Đông-Tây'
+       RRAe: 'Gần Đường sắt Đông-Tây'
+
+Condition2: 'Sự gần gũi với các điều kiện khác (nếu có nhiều hơn một điều kiện)'
+
+       Artery: 'Gần đường chính'
+       Feedr: 'Gần đường phụ'
+       Norm: 'Bình thường'
+       RRNn: 'Trong vòng 200' từ Đường sắt Bắc-Nam'
+       RRAn: 'Gần Đường sắt Bắc-Nam'
+       PosN: 'Gần tính năng tích cực bên ngoài - công viên, đường xanh, v.v.'
+       PosA: 'Gần tính năng tích cực bên ngoài'
+       RRNe: 'Trong vòng 200' từ Đường sắt Đông-Tây'
+       RRAe: 'Gần Đường sắt Đông-Tây'
+
+BldgType: 'Loại nhà ở'
+
+       1Fam: 'Nhà đơn lập'
+       2FmCon: 'Chuyển đổi hai gia đình; ban đầu được xây dựng như một ngôi nhà một gia đình'
+       Duplx: 'Nhà đôi'
+       TwnhsE: 'Nhà phố cuối'
+       TwnhsI: 'Nhà phố bên trong'
+
+HouseStyle: 'Kiểu nhà ở'
+
+       1Story: 'Một tầng'
+       1.5Fin: 'Một tầng rưỡi: tầng 2 đã hoàn thành'
+       1.5Unf: 'Một tầng rưỡi: tầng 2 chưa hoàn thành'
+       2Story: 'Hai tầng'
+       2.5Fin: 'Hai tầng rưỡi: tầng 2 đã hoàn thành'
+       2.5Unf: 'Hai tầng rưỡi: tầng 2 chưa hoàn thành'
+       SFoyer: 'Tầng chia'
+       SLvl: 'Cấp chia'
+
+OverallQual: 'Đánh giá chất lượng tổng thể của vật liệu và hoàn thiện của ngôi nhà'
+
+       10: 'Rất xuất sắc'
+       9: 'Xuất sắc'
+       8: 'Rất tốt'
+       7: 'Tốt'
+       6: 'Trên trung bình'
+       5: 'Trung bình'
+       4: 'Dưới trung bình'
+       3: 'Khá'
+       2: 'Kém'
+       1: 'Rất kém'
+
+OverallCond: 'Đánh giá tình trạng tổng thể của ngôi nhà'
+
+       10: 'Rất xuất sắc'
+       9: 'Xuất sắc'
+       8: 'Rất tốt'
+       7: 'Tốt'
+       6: 'Trên trung bình'
+       5: 'Trung bình'
+       4: 'Dưới trung bình'
+       3: 'Khá'
+       2: 'Kém'
+       1: 'Rất kém'
+
+YearBuilt: 'Ngày xây dựng ban đầu'
+
+YearRemodAdd: 'Ngày cải tạo (cùng ngày với ngày xây dựng nếu không có cải tạo hoặc bổ sung)'
+
+RoofStyle: 'Loại mái'
+
+       Flat: 'Mái phẳng'
+       Gable: 'Mái gable'
+       Gambrel: 'Mái gambrel (nhà kho)'
+       Hip: 'Mái hip'
+       Mansard: 'Mái mansard'
+       Shed: 'Mái shed'
+
+RoofMatl: 'Vật liệu mái'
+
+       ClyTile: 'Gạch hoặc ngói đất sét'
+       CompShg: 'Ngói tiêu chuẩn (Composite)'
+       Membran: 'Màng'
+       Metal: 'Kim loại'
+       Roll: 'Cuộn'
+       Tar&Grv: 'Đá và nhựa đường'
+       WdShake: 'Gỗ xô'
+       WdShngl: 'Ngói gỗ'
+
+Exterior1st: 'Lớp phủ bên ngoài của ngôi nhà'
+
+       AsbShng: 'Ngói amiang'
+       AsphShn: 'Ngói asphalt'
+       BrkComm: 'Gạch thông thường'
+       BrkFace: 'Gạch mặt'
+       CBlock: 'Khối bê tông'
+       CemntBd: 'Bảng xi măng'
+       HdBoard: 'Bảng cứng'
+       ImStucc: 'Stucco giả'
+       MetalSd: 'Siding kim loại'
+       Other: 'Khác'
+       Plywood: 'Ván ép'
+       PreCast: 'Đúc sẵn'
+       Stone: 'Đá'
+       Stucco: 'Stucco'
+       VinylSd: 'Siding vinyl'
+       Wd Sdng: 'Siding gỗ'
+       WdShing: 'Ngói gỗ'
+
+Exterior2nd: 'Lớp phủ bên ngoài của ngôi nhà (nếu có nhiều hơn một vật liệu)'
+
+       AsbShng: 'Ngói amiang'
+       AsphShn: 'Ngói asphalt'
+       BrkComm: 'Gạch thông thường'
+       BrkFace: 'Gạch mặt'
+       CBlock: 'Khối bê tông'
+       CemntBd: 'Bảng xi măng'
+       HdBoard: 'Bảng cứng'
+       ImStucc: 'Stucco giả'
+       MetalSd: 'Siding kim loại'
+       Other: 'Khác'
+       Plywood: 'Ván ép'
+       PreCast: 'Đúc sẵn'
+       Stone: 'Đá'
+       Stucco: 'Stucco'
+       VinylSd: 'Siding vinyl'
+       Wd Sdng: 'Siding gỗ'
+       WdShing: 'Ngói gỗ'
+
+MasVnrType: 'Loại veneer gạch'
+
+       BrkCmn: 'Gạch thông thường'
+       BrkFace: 'Gạch mặt'
+       CBlock: 'Khối bê tông'
+       None: 'Không có'
+       Stone: 'Đá'
+
+MasVnrArea: 'Diện tích veneer gạch tính bằng feet vuông'
+
+ExterQual: 'Đánh giá chất lượng vật liệu bên ngoài'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình/Điển hình'
+       Fa: 'Khá'
+       Po: 'Kém'
+
+ExterCond: 'Đánh giá tình trạng hiện tại của vật liệu bên ngoài'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình/Điển hình'
+       Fa: 'Khá'
+       Po: 'Kém'
+
+Foundation: 'Loại nền móng'
+
+       BrkTil: 'Gạch & Gạch'
+       CBlock: 'Khối bê tông'
+       PConc: 'Bê tông đúc sẵn'
+       Slab: 'Sàn'
+       Stone: 'Đá'
+       Wood: 'Gỗ'
+
+BsmtQual: 'Đánh giá chiều cao của tầng hầm'
+
+       Ex: 'Xuất sắc (trên 100 inch)'
+       Gd: 'Tốt (90-99 inch)'
+       TA: 'Điển hình (80-89 inch)'
+       Fa: 'Khá (70-79 inch)'
+       Po: 'Kém (dưới 70 inch)'
+       NA: 'Không có tầng hầm'
+
+BsmtCond: 'Đánh giá tình trạng chung của tầng hầm'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Điển hình - cho phép độ ẩm nhẹ'
+       Fa: 'Khá - có độ ẩm hoặc một số nứt n hoặc lún'
+       Po: 'Kém - Nứt nặng, lún hoặc ẩm ướt'
+       NA: 'Không có tầng hầm'
+
+BsmtExposure: 'Đề cập đến tường cấp thoát nước hoặc cấp vườn'
+
+       Gd: 'Tiếp xúc tốt'
+       Av: 'Tiếp xúc trung bình (các tầng chia hoặc foyer thường có điểm số trung bình hoặc cao hơn)'
+       Mn: 'Tiếp xúc tối thiểu'
+       No: 'Không có tiếp xúc'
+       NA: 'Không có tầng hầm'
+
+BsmtFinType1: 'Đánh giá khu vực tầng hầm đã hoàn thiện'
+
+       GLQ: 'Khu vực sống tốt'
+       ALQ: 'Khu vực sống trung bình'
+       BLQ: 'Khu vực sống dưới trung bình'
+       Rec: 'Phòng giải trí trung bình'
+       LwQ: 'Chất lượng thấp'
+       Unf: 'Chưa hoàn thiện'
+       NA: 'Không có tầng hầm'
+
+BsmtFinSF1: 'Diện tích hoàn thiện loại 1'
+
+BsmtFinType2: 'Đánh giá khu vực tầng hầm đã hoàn thiện (nếu có nhiều loại)'
+
+       GLQ: 'Khu vực sống tốt'
+       ALQ: 'Khu vực sống trung bình'
+       BLQ: 'Khu vực sống dưới trung bình'
+       Rec: 'Phòng giải trí trung bình'
+       LwQ: 'Chất lượng thấp'
+       Unf: 'Chưa hoàn thiện'
+       NA: 'Không có tầng hầm'
+
+BsmtFinSF2: 'Diện tích hoàn thiện loại 2'
+
+BsmtUnfSF: 'Diện tích tầng hầm chưa hoàn thiện'
+
+TotalBsmtSF: 'Tổng diện tích tầng hầm'
+
+Heating: 'Loại hệ thống sưởi'
+
+       Floor: 'Lò sưởi sàn'
+       GasA: 'Lò sưởi khí nóng cưỡng bức'
+       GasW: 'Nước nóng hoặc hơi khí gas'
+       Grav: 'Lò sưởi trọng lực'
+       OthW: 'Nước nóng hoặc hơi không phải gas'
+       Wall: 'Lò sưởi tường'
+
+HeatingQC: 'Chất lượng và tình trạng hệ thống sưởi'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình/Điển hình'
+       Fa: 'Khá'
+       Po: 'Kém'
+
+CentralAir: 'Điều hòa không khí trung tâm'
+
+       N: 'Không'
+       Y: 'Có'
+
+Electrical: 'Hệ thống điện'
+
+       SBrkr: 'Cầu dao tiêu chuẩn & dây Romex'
+       FuseA: 'Hộp cầu chì trên 60 AMP và tất cả dây Romex (Trung bình)'
+       FuseF: 'Hộp cầu chì 60 AMP và chủ yếu là dây Romex (Khá)'
+       FuseP: 'Hộp cầu chì 60 AMP và chủ yếu là dây nút & ống (kém)'
+       Mix: 'Hỗn hợp'
+
+1stFlrSF: 'Diện tích tầng một'
+
+2ndFlrSF: 'Diện tích tầng hai'
+
+LowQualFinSF: 'Diện tích hoàn thiện chất lượng thấp (tất cả các tầng)'
+
+GrLivArea: 'Diện tích sống trên mặt đất (feet vuông)'
+
+BsmtFullBath: 'Số phòng tắm đầy đủ trong tầng hầm'
+
+BsmtHalfBath: 'Số phòng tắm một nửa trong tầng hầm'
+
+FullBath: 'Số phòng tắm đầy đủ trên mặt đất'
+
+HalfBath: 'Số phòng tắm một nửa trên mặt đất'
+
+Bedroom: 'Số phòng ngủ trên mặt đất (không bao gồm phòng ngủ trong tầng hầm)'
+
+Kitchen: 'Số bếp trên mặt đất'
+
+KitchenQual: 'Chất lượng bếp'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình/Điển hình'
+       Fa: 'Khá'
+       Po: 'Kém'
+
+TotRmsAbvGrd: 'Tổng số phòng trên mặt đất (không bao gồm phòng tắm)'
+
+Functional: 'Chức năng của ngôi nhà (Giả định bình thường trừ khi có sự trừ khấu)'
+
+       Typ: 'Chức năng điển hình'
+       Min1: 'Trừ khấu nhỏ 1'
+       Min2: 'Trừ khấu nhỏ 2'
+       Mod: 'Trừ khấu vừa phải'
+       Maj1: 'Trừ kh khấu lớn 1'
+       Maj2: 'Trừ khấu lớn 2'
+       Sev: 'Bị hư hại nghiêm trọng'
+       Sal: 'Chỉ có thể cứu vãn'
+
+Fireplaces: 'Số lượng lò sưởi'
+
+FireplaceQu: 'Chất lượng lò sưởi'
+
+       Ex: 'Xuất sắc - Lò sưởi gạch đặc biệt'
+       Gd: 'Tốt - Lò sưởi gạch ở tầng chính'
+       TA: 'Trung bình - Lò sưởi chế tạo sẵn ở khu vực sinh hoạt chính hoặc lò sưởi gạch trong tầng hầm'
+       Fa: 'Khá - Lò sưởi chế tạo sẵn trong tầng hầm'
+       Po: 'Kém - Bếp lò Ben Franklin'
+       NA: 'Không có lò sưởi'
+
+GarageType: 'Vị trí gara'
+
+       2Types: 'Hơn một loại gara'
+       Attchd: 'Gắn liền với nhà'
+       Basment: 'Gara trong tầng hầm'
+       BuiltIn: 'Gara tích hợp (Gara là một phần của nhà - thường có phòng trên gara)'
+       CarPort: 'Chỗ đậu xe có mái che'
+       Detchd: 'Tách rời khỏi nhà'
+       NA: 'Không có gara'
+
+GarageYrBlt: 'Năm xây dựng gara'
+
+GarageFinish: 'Hoàn thiện bên trong của gara'
+
+       Fin: 'Hoàn thiện'
+       RFn: 'Hoàn thiện thô'
+       Unf: 'Chưa hoàn thiện'
+       NA: 'Không có gara'
+
+GarageCars: 'Kích thước gara theo sức chứa xe'
+
+GarageArea: 'Kích thước gara tính bằng feet vuông'
+
+GarageQual: 'Chất lượng gara'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình'
+       Fa: 'Khá'
+       Po: 'Kém'
+       NA: 'Không có gara'
+
+GarageCond: 'Tình trạng gara'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình'
+       Fa: 'Khá'
+       Po: 'Kém'
+       NA: 'Không có gara'
+
+PavedDrive: 'Đường lái xe được lát'
+
+       Y: 'Đường lát'
+       P: 'Lát một phần'
+       N: 'Đường đất/sỏi'
+
+WoodDeckSF: 'Diện tích sàn gỗ tính bằng feet vuông'
+
+OpenPorchSF: 'Diện tích hiên mở tính bằng feet vuông'
+
+EnclosedPorch: 'Diện tích hiên kín tính bằng feet vuông'
+
+3SsnPorch: 'Diện tích hiên ba mùa tính bằng feet vuông'
+
+ScreenPorch: 'Diện tích hiên có màn tính bằng feet vuông'
+
+PoolArea: 'Diện tích hồ bơi tính bằng feet vuông'
+
+PoolQC: 'Chất lượng hồ bơi'
+
+       Ex: 'Xuất sắc'
+       Gd: 'Tốt'
+       TA: 'Trung bình'
+       Fa: 'Khá'
+       NA: 'Không có hồ bơi'
+
+Fence: 'Chất lượng hàng rào'
+
+       GdPrv: 'Hàng rào tốt'
+       MnPrv: 'Hàng rào tối thiểu'
+       GdWo: 'Gỗ tốt'
+       MnWw: 'Gỗ/thép tối thiểu'
+       NA: 'Không có hàng rào'
+
+MiscFeature: 'Tính năng khác không được đề cập trong các danh mục khác'
+
+       Elev: 'Thang máy'
+       Gar2: 'Gara thứ hai (nếu không được mô tả trong phần gara)'
+       Othr: 'Khác'
+       Shed: 'Kho (trên 100 SF)'
+       TenC: 'Sân tennis'
+       NA: 'Không có'
+
+MiscVal: 'Giá trị $ của tính năng khác'
+
+MoSold: 'Tháng bán (MM)'
+
+YrSold: 'Năm bán (YYYY)'
+
+SaleType: 'Loại giao dịch'
+
+       WD: 'Giấy chứng nhận bảo hành - Thông thường'
+       CWD: 'Giấy chứng nhận bảo hành - Tiền mặt'
+       VWD: 'Giấy chứng nhận bảo hành - Khoản vay VA'
+       New: 'Nhà vừa được xây dựng và bán'
+       COD: 'Giấy chứng nhận của nhân viên tòa án/Di sản'
+       Con: 'Hợp đồng thanh toán 15% theo điều khoản thông thường'
+       ConLw: 'Hợp đồng thanh toán thấp và lãi suất thấp'
+       ConLI: 'Hợp đồng lãi suất thấp'
+       ConLD: 'Hợp đồng thanh toán thấp'
+       Oth: 'Khác'
+
+SaleCondition: 'Tình trạng giao dịch'
+
+       Normal: 'Giao dịch bình thường'
+       Abnorml: 'Giao dịch bất thường - trao đổi, tịch thu, bán ngắn hạn'
+       AdjLand: 'Mua đất liền kề'
+       Alloca: 'Phân bổ - hai tài sản liên kết với các giấy chứng nhận riêng biệt, thường là căn hộ với một đơn vị gara'
+       Family: 'Giao dịch giữa các thành viên trong gia đình'
+       Partial: 'Ngôi nhà chưa hoàn thành khi được đánh giá lần cuối (liên quan đến nhà mới)'
